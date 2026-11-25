@@ -93,4 +93,9 @@ See drafts.md (30 drafts, 6 groups round-robin, finalists vs 3 resolved winners)
 
 ## BUILD
 - Workdir: ~/workspace/projects/makefun/best-advice/, repo in repo/
-- Flags execution-risk: (fill at end)
+- Repo: https://github.com/cengkeh1608-oss/best-advice — HEAD == origin/master
+- Commit entry: `dacee18` (root `ebc075d` ONLY .makefun, anchor drand round 34278539; LICENSE commit `32288f1`)
+- Output: 2x byte-identical dari cwd berbeda, sha256 `eb4af5c227ed76188ed2ba1ee2c04096ee975128dd176d05f38dbfdacb3dc0d3`, 121 byte = 120 chars + newline
+- main.ts ditulis fresh dari spek dalam 2 pesan write/edit (tulis + edit validasi whitespace-only yang mengubah isi sungguhan). Tanpa process.env/eval/dynamic import.
+- Flags execution-risk: 0.
+- Catatan: service sempat restart di tengah riset final (fetch via urllib gagal IncompleteRead, sesuai peringatan skill — pakai curl; /tmp ter-wipe restart, file riset dipindah ke hidden/ yang persisten).
